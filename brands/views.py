@@ -43,7 +43,6 @@ class BrandUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView):
     permission_required = 'brands.change_brand'
 
 
-
 class BrandDeleteView(LoginRequiredMixin, PermissionRequiredMixin, DeleteView):
     model = models.Brand
     template_name = 'brand_delete.html'
