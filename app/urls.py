@@ -11,6 +11,8 @@ urlpatterns = [
 
     path('', views.home, name='home'),
 
+    path('', include('authentication.urls')),
+
     path('', include('brands.urls')),
     path('', include('categories.urls')),
     path('', include('suppliers.urls')),
